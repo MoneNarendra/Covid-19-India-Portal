@@ -1,0 +1,73 @@
+
+GET http://localhost:3000/allUsers/
+
+###
+
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+  "username": "christopher_phillips",
+  "password": "christy@123"
+}
+
+###
+
+GET http://localhost:3000/states/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzA4NzE0NDEwfQ.n_J8sy9OKxLhQT8Apl5wv3Oj764rrnt6Rx9oDtF_s3g
+
+###
+
+GET http://localhost:3000/states/3/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzA4NzE0NDEwfQ.n_J8sy9OKxLhQT8Apl5wv3Oj764rrnt6Rx9oDtF_s3g
+
+###
+
+GET http://localhost:3000/district/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzA4NzE0NDEwfQ.n_J8sy9OKxLhQT8Apl5wv3Oj764rrnt6Rx9oDtF_s3g
+
+###
+
+POST http://localhost:3000/districts/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzA4NzE0NDEwfQ.n_J8sy9OKxLhQT8Apl5wv3Oj764rrnt6Rx9oDtF_s3g
+Content-Type: application/json
+
+{
+  "districtName": "Bagalkot",
+  "stateId": 3,
+  "cases": 2323,
+  "cured": 2000,
+  "active": 315,
+  "deaths": 8
+}
+
+###
+
+GET http://localhost:3000/districts/330/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzA4NzE0NDEwfQ.n_J8sy9OKxLhQT8Apl5wv3Oj764rrnt6Rx9oDtF_s3g
+
+###
+
+DELETE http://localhost:3000/districts/322/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzA4NzE0NDEwfQ.n_J8sy9OKxLhQT8Apl5wv3Oj764rrnt6Rx9oDtF_s3g
+
+###
+
+PUT http://localhost:3000/districts/330/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzA4NzE0NDEwfQ.n_J8sy9OKxLhQT8Apl5wv3Oj764rrnt6Rx9oDtF_s3g
+Content-Type: application/json
+
+{
+  "districtName": "Nadia",
+  "stateId": 3,
+  "cases": 9628,
+  "cured": 6524,
+  "active": 3000,
+  "deaths": 104
+}
+
+###
+
+GET http://localhost:3000/states/3/stats/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzA4NzE0NDEwfQ.n_J8sy9OKxLhQT8Apl5wv3Oj764rrnt6Rx9oDtF_s3g
+
