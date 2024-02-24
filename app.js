@@ -72,12 +72,7 @@ const Authentication = (request, response, next) => {
   }
 }
 
-// GET all users
-app.get('/allUsers/', async (request, response) => {
-  const getUsersQuery = `SELECT * FROM user`
-  const getUsers = await db.all(getUsersQuery)
-  response.send(getUsers)
-})
+
 
 // login user (API 1)
 app.post('/login/', async (request, response) => {
