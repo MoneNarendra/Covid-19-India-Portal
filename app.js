@@ -193,7 +193,7 @@ app.get(
       SUM(deaths) as totalDeaths
     FROM
       district
-    GROUP BY
+    WHERE
       state_id = ${stateId};`
     const getStats = await db.get(getsStatsQuery)
     response.send(getStats)
